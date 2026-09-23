@@ -1,8 +1,9 @@
+// Launch scope: only English and Konkani are exposed in the language
+// switcher for now. Latin/Spanish/Portuguese translations are still present
+// throughout src/data/*.js (prayers, mysteries, UI strings) — to bring a
+// language back, just re-add its entry here.
 export const LANGUAGES = [
   { code: 'en', name: 'English', native: 'English' },
-  { code: 'la', name: 'Latin', native: 'Latina' },
-  { code: 'es', name: 'Spanish', native: 'Español' },
-  { code: 'pt', name: 'Portuguese', native: 'Português' },
   { code: 'kok', name: 'Konkani', native: 'Konkani' },
 ];
 

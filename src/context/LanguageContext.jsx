@@ -1,12 +1,16 @@
 import { createContext, useContext, useMemo, useState } from 'react';
-import { DEFAULT_LANGUAGE } from '../data/languages.js';
+import { DEFAULT_LANGUAGE, LANGUAGES } from '../data/languages.js';
 
 const LanguageContext = createContext(null);
+const AVAILABLE_CODES = new Set(LANGUAGES.map((l) => l.code));
 
 export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState(() => {
     try {
-      return window.localStorage.getItem('prayers.language') || DEFAULT_LANGUAGE;
+      const stored = window.localStorage.getItem('prayers.language');
+      // Ignore a saved language that isn't currently offered (e.g. from
+      // before a language was temporarily removed from the switcher).
+      return stored && AVAILABLE_CODES.has(stored) ? stored : DEFAULT_LANGUAGE;
     } catch {
       return DEFAULT_LANGUAGE;
     }
