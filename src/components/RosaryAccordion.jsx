@@ -3,6 +3,7 @@ import { groupIntoDecades } from '../utils/rosarySequence.js';
 import PrayerBlock from './PrayerBlock.jsx';
 import { UI } from '../data/ui.js';
 import { pick } from '../context/LanguageContext.jsx';
+import { withOrdinalSuperscripts } from '../utils/ordinalSuperscript.jsx';
 
 function Section({ id, title, steps, language, open, onToggle }) {
   return (
@@ -35,7 +36,11 @@ export default function RosaryAccordion({ steps, language }) {
         <Section
           key={`decade-${i}`}
           id={`decade-${i}`}
-          title={`${pick(UI.decade, language)} ${i + 1} · ${pick(decadeSteps[0].mystery.name, language)}`}
+          title={
+            <>
+              {pick(UI.decade, language)} {i + 1} · {withOrdinalSuperscripts(pick(decadeSteps[0].mystery.name, language))}
+            </>
+          }
           steps={decadeSteps}
           language={language}
           open={openId === `decade-${i}`}

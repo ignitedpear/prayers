@@ -18,7 +18,7 @@ export const PRAYERS = {
       la: 'In nomine Patris, et Filii, et Spiritus Sancti. Amen.',
       es: 'En el nombre del Padre, y del Hijo, y del Espíritu Santo. Amén.',
       pt: 'Em nome do Pai, e do Filho, e do Espírito Santo. Amém.',
-      kok: 'Bapache, ani Putache, ani Povitr Otmeache Nanvim. Amen.',
+      kok: 'Povitr Khursache + kurven \n Nivar amkam, + amchea Deva \n Amchea + dusmanantlim \n Bapache ani Putache + ani Povitr Atmeache nanvim. Amen',
     },
   },
 
@@ -28,14 +28,14 @@ export const PRAYERS = {
       la: 'Symbolum Apostolorum',
       es: 'Credo (Símbolo de los Apóstoles)',
       pt: 'Credo (Símbolo dos Apóstolos)',
-      kok: "Sotman'tam",
+      kok: "Sotmantam",
     },
     text: {
       en: 'I believe in God, the Father Almighty, Creator of Heaven and earth; and in Jesus Christ, His only Son Our Lord, Who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried. He descended into Hell; the third day He rose again from the dead; He ascended into Heaven, and sitteth at the right hand of God, the Father almighty; from thence He shall come to judge the living and the dead. I believe in the Holy Spirit, the holy Catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body and life everlasting. Amen.',
       la: 'Credo in Deum Patrem omnipotentem, Creatorem caeli et terrae. Et in Iesum Christum, Filium eius unicum, Dominum nostrum, qui conceptus est de Spiritu Sancto, natus ex Maria Virgine, passus sub Pontio Pilato, crucifixus, mortuus, et sepultus, descendit ad infernos, tertia die resurrexit a mortuis, ascendit ad caelos, sedet ad dexteram Dei Patris omnipotentis, inde venturus est iudicare vivos et mortuos. Credo in Spiritum Sanctum, sanctam Ecclesiam catholicam, sanctorum communionem, remissionem peccatorum, carnis resurrectionem et vitam aeternam. Amen.',
       es: 'Creo en Dios, Padre Todopoderoso, Creador del cielo y de la tierra. Creo en Jesucristo, su único Hijo, Nuestro Señor, que fue concebido por obra y gracia del Espíritu Santo, nació de Santa María Virgen, padeció bajo el poder de Poncio Pilato, fue crucificado, muerto y sepultado, descendió a los infiernos, al tercer día resucitó de entre los muertos, subió a los cielos y está sentado a la derecha de Dios, Padre todopoderoso. Desde allí ha de venir a juzgar a vivos y muertos. Creo en el Espíritu Santo, la santa Iglesia católica, la comunión de los santos, el perdón de los pecados, la resurrección de la carne y la vida eterna. Amén.',
       pt: 'Creio em Deus, Pai todo-poderoso, Criador do Céu e da Terra. E em Jesus Cristo, seu único Filho, nosso Senhor, que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria; padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado; desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos Céus; está sentado à direita de Deus Pai todo-poderoso, de onde há-de vir a julgar os vivos e os mortos. Creio no Espírito Santo; na santa Igreja Católica; na comunhão dos Santos; na remissão dos pecados; na ressurreição da carne; e na vida eterna. Amém.',
-      kok: "Sotman’tam Devak, Sorv-podvedara Bapak, sorga ani prithumichea Rochnarak; ani Jezu Kristak, Tacha ekleach Putak, amchea Somiak. To Povitr Otmea vorvim gorbhim sombhovlo, Anvkvar Morie thavn zolmalo. Pons Pilata khal Tannem koxtt sosle, Taka Khursar zoddlo, To melo, ani Taka nikepilo. To mel’leam modhem denvlo, Tisrea disa mel'leantlo jivont zalo. Sorgar choddlo, Sorv- podvedar Deva Bapachea ujveak bosla. Thoim thavn jiveam ani mel’leanchi mun’subi korunk ietolo. Sotman’tam Povitr Otmeak, Katholik Povitr Sobhek, bhoktancho ektar, patkanchem bhogsonnem, kuddichem jivontponn, sasnnachem jivit. Amen.",
+      kok: "Sotman’tam Devak, Sorv-podvedar Bapak, sorga ani prithumechea Rochnnarak. Ani Jezu Kristak, Tachea ekleach Putak, amchea Somiak. To Povitr Atmea vorvim gorbhim sombhovlo, Ankvar Morie thavn zolmolo. Pons Pilata khal Tannem koxtt sosle, Taka Khursar zoddlo, To melo, ani Taka nikipilo. To mel’leam modem denvlo, Tisrea disa mel'leantlo jivont zalo. Sorgar choddlo, Sorv-podvedar Deva Bapachea uzveak bosla. Thoim thavn jiveam ani mel’leanchi mon’subi korunk ietolo. Sotman’tam Povitr Atmeak, Katolik Povitr Sobhek, bhoktancho ektar, patkanchem bhogsonnem, kuddichem jivontponn, sasnnachem jivit. Amen.",
     },
   },
 
@@ -52,7 +52,7 @@ export const PRAYERS = {
       la: 'Pater noster, qui es in caelis: Sanctificetur nomen tuum: Adveniat regnum tuum: Fiat voluntas tua, sicut in caelo, et in terra. Panem nostrum quotidianum da nobis hodie: Et dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris. Et ne nos inducas in tentationem, sed libera nos a malo. Amen.',
       es: 'Padre nuestro que estás en el cielo, santificado sea tu Nombre; venga a nosotros tu Reino; hágase tu voluntad en la tierra como en el cielo. Danos hoy nuestro pan de cada día; perdona nuestras ofensas, como también nosotros perdonamos a los que nos ofenden; no nos dejes caer en la tentación, y líbranos del mal. Amén.',
       pt: 'Pai Nosso que estais nos Céus, santificado seja o vosso Nome, venha a nós o vosso Reino, seja feita a vossa vontade assim na terra como no Céu. O pão nosso de cada dia nos dai hoje, perdoai-nos as nossas ofensas assim como nós perdoamos a quem nos tem ofendido, e não nos deixeis cair em tentação, mas livrai-nos do Mal. Amém.',
-      kok: 'Amchea Bapa sorginchea, Tujem nanv povitr zanv, Tujem raz amkam ienv, Tuji khuxi sorgar zata toxi sonvsarant zanv. Amcho dispotto gras aiz amkam di, ani ami amcher chukloleank bhogsitanv, toxem amchi patkam bhogos. Ani amkam tallneant poddunk dinv naka, punn vaittantlim amkam nivar. Amen.',
+      kok: "Amchea Bapa Sorginchea, Tujem Nanv povitr zanv, Tujem raz amkam ieum, Tuji khuxi sorgar zata toxi sonvsarant zanv. \n Amcho dispott'tto giras aiz amkam di, ani ami amcher chukleleank bhogxitanv, toxem amchi patkam bhogos, ani amkam tallnent poddunk dium naka, punn vaittantlim amkam nivar. Amen.",
     },
   },
 
@@ -69,7 +69,7 @@ export const PRAYERS = {
       la: 'Ave Maria, gratia plena, Dominus tecum. Benedicta tu in mulieribus, et benedictus fructus ventris tui, Iesus. Sancta Maria, Mater Dei, ora pro nobis peccatoribus, nunc, et in hora mortis nostrae. Amen.',
       es: 'Dios te salve, María, llena eres de gracia; el Señor es contigo. Bendita Tú eres entre todas las mujeres, y bendito es el fruto de tu vientre, Jesús. Santa María, Madre de Dios, ruega por nosotros, pecadores, ahora y en la hora de nuestra muerte. Amén.',
       pt: 'Avé Maria, cheia de graça, o Senhor é convosco, bendita sois vós entre as mulheres e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós pecadores, agora e na hora da nossa morte. Amém.',
-      kok: 'Noman Marie, kurpen bhorlole, Sorvesvor tuje thaim asa, Ostoream modhem tum sodov, ani sodov tuzo Put Jezu. Bhagevonti Marie, Devache Maie, amam papiam khatir vinonti kor atam ani amchea mornachea vellar. Amen.',
+      kok: 'Noman Marie, Kurpen bhorlele, Sorvespor tuje thaim asa, Ostoream modem tum sodoiv, ani sodoiv tuzo Put Jezu. \nBhagevont Marie, Devache Maie, amam papiam khatir vinoti kor, atam ani amchea mornachea vellar. Amen.',
     },
   },
 
@@ -86,7 +86,7 @@ export const PRAYERS = {
       la: 'Gloria Patri, et Filio, et Spiritui Sancto. Sicut erat in principio, et nunc, et semper, et in saecula saeculorum. Amen.',
       es: 'Gloria al Padre y al Hijo y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.',
       pt: 'Glória ao Pai e ao Filho e ao Espírito Santo. Como era no princípio, agora e sempre, e para todo o sempre. Amém.',
-      kok: 'Mhoima Bapak ani Putak ani Povitr Atmeak; Adim, atam ani sodam sodankal. Amen.',
+      kok: 'Mhoima Bapak, ani Putak ani Povitr Atmeak: Adim, atam ani sodam sodankal. Amen.',
     },
   },
 
@@ -103,7 +103,7 @@ export const PRAYERS = {
       la: 'O mi Iesu, dimitte nobis debita nostra, salva nos ab igne inferni, adduc in caelum omnes animas, praesertim illas, quae misericordiae tuae maxime indigent.',
       es: '¡Oh Jesús mío!, perdona nuestros pecados, líbranos del fuego del infierno, lleva todas las almas al cielo y socorre especialmente a las más necesitadas de tu misericordia.',
       pt: 'Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno; levai as almas todas para o Céu, principalmente as que mais precisarem.',
-      kok: 'O mhojea Jezu, amchi patkam amkam bhogos. emkhonddantlea ujeantlim amkam nivar. Somest otmeank pav, odhik korun chodd goroz asloleank',
+      kok: 'O mhojea Jezu, amchi patkam amkam bhogos. emkhonddantlea ujeantlim amkam nivar. Somest atmeank pav, odhik korun chodd goroz asloleank',
     },
   },
 
@@ -120,7 +120,7 @@ export const PRAYERS = {
       la: 'Salve, Regina, mater misericordiae; vita, dulcedo et spes nostra, salve. Ad te clamamus exsules filii Hevae. Ad te suspiramus gementes et flentes in hac lacrimarum valle. Eia ergo, advocata nostra, illos tuos misericordes oculos ad nos converte. Et Iesum, benedictum fructum ventris tui, nobis post hoc exsilium ostende. O clemens, o pia, o dulcis Virgo Maria.',
       es: 'Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra; Dios te salve. A ti llamamos los desterrados hijos de Eva; a ti suspiramos, gimiendo y llorando en este valle de lágrimas. Ea, pues, Señora, abogada nuestra, vuelve a nosotros esos tus ojos misericordiosos; y después de este destierro, muéstranos a Jesús, fruto bendito de tu vientre. ¡Oh, clementísima, oh piadosa, oh dulce Virgen María!',
       pt: 'Salve, Rainha, mãe de misericórdia, vida, doçura, esperança nossa, salve! A Vós bradamos, os degredados filhos de Eva. A Vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, advogada nossa, esses Vossos olhos misericordiosos a nós volvei. E, depois deste desterro, nos mostrai Jesus, bendito fruto do Vosso ventre. Ó clemente, ó piedosa, ó doce Virgem Maria.',
-      kok: 'Noman Rannie Kakutiche Maie, noman amchea jivita, amruta ani bhorvanxea; tuka ami ulo martanv ami pordexi Evechim ballkam. Hea dukhachea konddant astam, askar-suskar soddun ami tuka rudan kortanv. Tor tum amche xaratinni te tuje kakutiche dolle amche voir porot ani hea jivita uprant, tuje kuxichem sodoiv foll Jezu amkam dakhoi; Eh xanti, Eh mogall konvalle, Eh dulob Ankvar Marie. Bhagevonti Devache Maie, ama pasunt vinati kor Kristachea basovnneak ami pavo zavnchea katir',
+      kok: "Noman Rannie, kakutiche Maie, tunch ge amchem jivit, omrut ani bhorvanso. Ami pordexi Evechim ballkam tuka ulo martanv. Hea dukhachea khonddant suskar soddun, rudon korun, Maie, tuka prath'tanv. Amcher, doiall xeratini, tuji kakutichi nodor ghal, tum konnvalle ani mogall, dulob Ankvar Marie, hea pordesa uprant tuzo Put Jezu amkam dhakoi",
     },
     versicle: {
       en: { v: 'Pray for us, O holy Mother of God.', r: 'That we may be made worthy of the promises of Christ.' },
@@ -147,7 +147,7 @@ export const ANGELUS = {
     la: 'Angelus',
     es: 'El Ángelus',
     pt: 'O Angelus',
-    kok: 'Angelus',
+    kok: 'Amori',
   },
   versicles: [
     {
@@ -205,14 +205,14 @@ export const ANGELUS = {
       la: 'Ora pro nobis, sancta Dei Genitrix.',
       es: 'Ruega por nosotros, Santa Madre de Dios.',
       pt: 'Rogai por nós, santa Mãe de Deus.',
-      kok: 'Bhagevant Devachie Maie ama pasat vinati kar.',
+      kok: 'Bhov Povitr Ruzariche Rannie, amche pasot mag.',
     },
     r: {
       en: 'That we may be made worthy of the promises of Christ.',
       la: 'Ut digni efficiamur promissionibus Christi.',
       es: 'Para que seamos dignos de alcanzar las promesas de Jesucristo.',
       pt: 'Para que sejamos dignos das promessas de Cristo.',
-      kok: 'Kristacha bhasavnyak ami favo zanvche khatir.',
+      kok: 'Kristacheo bhasavnneo amkam favo zauncheak.',
     },
   },
   closingPrayer: {

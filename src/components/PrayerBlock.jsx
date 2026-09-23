@@ -1,6 +1,7 @@
 import { PRAYERS, ANGELUS } from '../data/prayers.js';
 import { UI } from '../data/ui.js';
 import { pick } from '../context/LanguageContext.jsx';
+import { withOrdinalSuperscripts } from '../utils/ordinalSuperscript.jsx';
 
 function RepeatNote({ step, language }) {
   if (!step.repeat) return null;
@@ -17,13 +18,19 @@ export default function PrayerBlock({ step, language, size = 'large' }) {
   const cls = `prayer-block prayer-block--${size}`;
 
   if (step.kind === 'mysteryAnnounce') {
+    const name = pick(step.mystery.name, language);
+    const hasName = name.trim().length > 0;
     return (
       <div className={cls}>
-        <p className="prayer-block__eyebrow">
-          {pick(UI.decade, language)} {step.decadeIndex + 1}
+        {hasName && (
+          <p className="prayer-block__eyebrow">
+            {pick(UI.decade, language)} {step.decadeIndex + 1}
+          </p>
+        )}
+        <h3 className="prayer-block__title prayer-block__title--mystery">{withOrdinalSuperscripts(name)}</h3>
+        <p className={`prayer-block__meditation${hasName ? '' : ' prayer-block__meditation--emphasis'}`}>
+          {pick(step.mystery.meditation, language)}
         </p>
-        <h3 className="prayer-block__title prayer-block__title--mystery">{pick(step.mystery.name, language)}</h3>
-        <p className="prayer-block__meditation">{pick(step.mystery.meditation, language)}</p>
       </div>
     );
   }

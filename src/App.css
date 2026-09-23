@@ -4,6 +4,12 @@
   padding: 0 16px 64px;
 }
 
+/* Konkani ordinal shorthand (1lo, 2ro, 3ro, 4tho, 5vo) */
+sup {
+  font-size: 0.65em;
+  line-height: 0;
+}
+
 /* ---------- Header ---------- */
 .app-header {
   padding-top: 24px;
@@ -285,6 +291,15 @@
   margin: 0;
 }
 
+/* Used when a mystery has no name to show (eyebrow + title both hidden) —
+   the meditation stands in as the focal text, so it's bolded and enlarged. */
+.prayer-block__meditation--emphasis {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--ink);
+}
+
 .prayer-block__text {
   margin: 0 0 10px;
   white-space: pre-line;
@@ -308,6 +323,10 @@
 
 .prayer-block--large .prayer-block__title {
   font-size: 20px;
+}
+
+.prayer-block--large .prayer-block__meditation--emphasis {
+  font-size: 21px;
 }
 
 .prayer-block--large .prayer-block__text {
