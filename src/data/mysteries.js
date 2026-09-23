@@ -10,14 +10,14 @@ export const MYSTERY_SETS = {
       la: 'Mysteria Gaudiosa',
       es: 'Los Misterios Gozosos',
       pt: 'Os Mistérios Gozosos',
-      kok: 'Khoxecho Mister',
+      kok: 'Sontosache Mister',
     },
     days: {
       en: 'Monday & Saturday',
       la: 'Feria Secunda et Sabbato',
       es: 'Lunes y Sábado',
       pt: 'Segunda-feira e Sábado',
-      kok: 'Somar ani Son’var',
+      kok: 'Somar ani Sonvar',
     },
     mysteries: [
       {
@@ -80,14 +80,14 @@ export const MYSTERY_SETS = {
       la: 'Mysteria Dolorosa',
       es: 'Los Misterios Dolorosos',
       pt: 'Os Mistérios Dolorosos',
-      kok: 'Dukhachi Mister',
+      kok: 'Dukhichi Mister',
     },
     days: {
       en: 'Tuesday & Friday',
       la: 'Feria Tertia et Sexta',
       es: 'Martes y Viernes',
       pt: 'Terça-feira e Sexta-feira',
-      kok: 'Mongllar ani Sukrar',
+      kok: 'Mungllar ani Sukrar',
     },
     mysteries: [
       {
@@ -150,7 +150,7 @@ export const MYSTERY_SETS = {
       la: 'Mysteria Gloriosa',
       es: 'Los Misterios Gloriosos',
       pt: 'Os Mistérios Gloriosos',
-      kok: 'Vhoddikaiechi Mister',
+      kok: 'Horkache Mister',
     },
     days: {
       en: 'Wednesday & Sunday',
@@ -220,14 +220,14 @@ export const MYSTERY_SETS = {
       la: 'Mysteria Luminosa',
       es: 'Los Misterios Luminosos',
       pt: 'Os Mistérios Luminosos',
-      kok: 'Uzvaddachi Mister',
+      kok: 'Uzvaddache Mister',
     },
     days: {
       en: 'Thursday',
       la: 'Feria Quinta',
       es: 'Jueves',
       pt: 'Quinta-feira',
-      kok: 'Birestar',
+      kok: 'Brestar',
     },
     mysteries: [
       {

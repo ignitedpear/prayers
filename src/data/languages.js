@@ -6,4 +6,4 @@ export const LANGUAGES = [
   { code: 'kok', name: 'Konkani', native: 'Konkani' },
 ];
 
-export const DEFAULT_LANGUAGE = 'en';
+export const DEFAULT_LANGUAGE = 'kok';
