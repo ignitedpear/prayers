@@ -52,7 +52,7 @@ export const PRAYERS = {
       la: 'Pater noster, qui es in caelis: Sanctificetur nomen tuum: Adveniat regnum tuum: Fiat voluntas tua, sicut in caelo, et in terra. Panem nostrum quotidianum da nobis hodie: Et dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris. Et ne nos inducas in tentationem, sed libera nos a malo. Amen.',
       es: 'Padre nuestro que estás en el cielo, santificado sea tu Nombre; venga a nosotros tu Reino; hágase tu voluntad en la tierra como en el cielo. Danos hoy nuestro pan de cada día; perdona nuestras ofensas, como también nosotros perdonamos a los que nos ofenden; no nos dejes caer en la tentación, y líbranos del mal. Amén.',
       pt: 'Pai Nosso que estais nos Céus, santificado seja o vosso Nome, venha a nós o vosso Reino, seja feita a vossa vontade assim na terra como no Céu. O pão nosso de cada dia nos dai hoje, perdoai-nos as nossas ofensas assim como nós perdoamos a quem nos tem ofendido, e não nos deixeis cair em tentação, mas livrai-nos do Mal. Amém.',
-      kok: "Amchea Bapa Sorginchea, Tujem Nanv povitr zanv, Tujem raz amkam ieum, Tuji khuxi sorgar zata toxi sonvsarant zanv. \n Amcho dispott'tto giras aiz amkam di, ani ami amcher chukleleank bhogxitanv, toxem amchi patkam bhogos, ani amkam tallnent poddunk dium naka, punn vaittantlim amkam nivar. Amen.",
+      kok: "Amchea Bapa Sorginchea, Tujem Nanv povitr zanv, Tujem raz amkam ieum, Tuji khuxi sorgar zata toxi sonvsarant zanv. \n\n Amcho dispott'tto giras aiz amkam di, ani ami amcher chukleleank bhogxitanv, toxem amchi patkam bhogos, ani amkam tallnent poddunk dium naka, punn vaittantlim amkam nivar. Amen.",
     },
   },
 
@@ -69,7 +69,7 @@ export const PRAYERS = {
       la: 'Ave Maria, gratia plena, Dominus tecum. Benedicta tu in mulieribus, et benedictus fructus ventris tui, Iesus. Sancta Maria, Mater Dei, ora pro nobis peccatoribus, nunc, et in hora mortis nostrae. Amen.',
       es: 'Dios te salve, María, llena eres de gracia; el Señor es contigo. Bendita Tú eres entre todas las mujeres, y bendito es el fruto de tu vientre, Jesús. Santa María, Madre de Dios, ruega por nosotros, pecadores, ahora y en la hora de nuestra muerte. Amén.',
       pt: 'Avé Maria, cheia de graça, o Senhor é convosco, bendita sois vós entre as mulheres e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós pecadores, agora e na hora da nossa morte. Amém.',
-      kok: 'Noman Marie, Kurpen bhorlele, Sorvespor tuje thaim asa, Ostoream modem tum sodoiv, ani sodoiv tuzo Put Jezu. \nBhagevont Marie, Devache Maie, amam papiam khatir vinoti kor, atam ani amchea mornachea vellar. Amen.',
+      kok: 'Noman Marie, Kurpen bhorlele, Sorvespor tuje thaim asa, Ostoream modem tum sodoiv, ani sodoiv tuzo Put Jezu. \n\n Bhagevont Marie, Devache Maie, amam papiam khatir vinoti kor, atam ani amchea mornachea vellar. Amen.',
     },
   },
 
