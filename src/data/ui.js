@@ -15,7 +15,7 @@ export const UI = {
   finishedSub: { en: 'Thank you for praying the Rosary today.', la: 'Gratias tibi ago quod Rosarium hodie recitasti.', es: 'Gracias por rezar el Rosario hoy.', pt: 'Obrigado por rezar o Rosário hoje.', kok: "Aiz Ters mhonnlea khatir dev bore korum." },
   opening: { en: 'Opening Prayers', la: 'Preces Initiales', es: 'Oraciones Iniciales', pt: 'Orações Iniciais', kok: 'Survatechim Magnnim' },
   closing: { en: 'Closing Prayers', la: 'Preces Finales', es: 'Oraciones Finales', pt: 'Orações Finais', kok: "Xevottachim Magnnim" },
-  decade: { en: 'Decade', la: 'Decas', es: 'Década', pt: 'Dezena', kok: 'Dahava' },
+  decade: { en: 'Decade', la: 'Decas', es: 'Década', pt: 'Dezena', kok: 'Hann' },
   step: { en: 'Step', la: 'Gradus', es: 'Paso', pt: 'Passo', kok: 'Pavlo' },
   of: { en: 'of', la: 'ex', es: 'de', pt: 'de', kok: 'chea' },
   repeatTimes: { en: 'Pray this', la: 'Recita', es: 'Reza esto', pt: 'Reze isto', kok: 'Hem Mhonn' },

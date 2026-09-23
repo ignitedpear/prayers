@@ -23,7 +23,7 @@ export default function PrayerBlock({ step, language, size = 'large' }) {
           {pick(UI.decade, language)} {step.decadeIndex + 1}
         </p>
         <h3 className="prayer-block__title prayer-block__title--mystery">{pick(step.mystery.name, language)}</h3>
-        <p className="prayer-block__meditation">{step.mystery.meditation}</p>
+        <p className="prayer-block__meditation">{pick(step.mystery.meditation, language)}</p>
       </div>
     );
   }
