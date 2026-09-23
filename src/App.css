@@ -1,0 +1,449 @@
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 16px 64px;
+}
+
+/* ---------- Header ---------- */
+.app-header {
+  padding-top: 24px;
+  position: sticky;
+  top: 0;
+  background: var(--cream);
+  z-index: 10;
+  border-bottom: 1px solid var(--border);
+}
+
+.app-header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.app-header__title {
+  font-size: 26px;
+  margin: 0 0 12px;
+  color: var(--maroon);
+  letter-spacing: 0.2px;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+}
+
+.language-switcher select {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.app-nav {
+  display: flex;
+  gap: 4px;
+}
+
+.app-nav__btn {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  background: none;
+  border-bottom: 3px solid transparent;
+  color: var(--ink-soft);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.app-nav__btn--active {
+  color: var(--maroon);
+  border-bottom-color: var(--gold);
+  font-weight: 600;
+}
+
+.app-main {
+  padding-top: 20px;
+}
+
+/* ---------- Date strip ---------- */
+.date-strip__row {
+  display: flex;
+  gap: 6px;
+  justify-content: space-between;
+}
+
+.date-chip {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 4px 8px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  min-width: 0;
+}
+
+.date-chip--active {
+  background: var(--maroon);
+  border-color: var(--maroon);
+  color: #fff;
+}
+
+.date-chip__weekday {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.75;
+}
+
+.date-chip__day {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.date-chip__today {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--gold);
+}
+
+.date-chip--active .date-chip__today {
+  color: var(--gold-light);
+}
+
+.date-strip__full {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+/* ---------- Mystery header ---------- */
+.mystery-header {
+  text-align: center;
+  margin: 22px 0 18px;
+}
+
+.mystery-header__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-size: 11px;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+.mystery-header__name {
+  font-size: 24px;
+  color: var(--maroon);
+  margin: 0 0 6px;
+}
+
+.mystery-header__days {
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+/* ---------- View toggle ---------- */
+.view-toggle {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.view-toggle__btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--paper);
+  color: var(--ink-soft);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.view-toggle__btn--active {
+  background: var(--maroon);
+  border-color: var(--maroon);
+  color: #fff;
+}
+
+/* ---------- Progress bar ---------- */
+.progress-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.progress-bar__track {
+  flex: 1;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--gold-light);
+  overflow: hidden;
+}
+
+.progress-bar__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--maroon));
+  transition: width 0.3s ease;
+}
+
+.progress-bar__pct {
+  font-size: 12px;
+  color: var(--ink-soft);
+  min-width: 34px;
+  text-align: right;
+}
+
+/* ---------- Accordion ---------- */
+.accordion-section {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.accordion-section__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--maroon);
+  font-weight: 600;
+  text-align: left;
+}
+
+.accordion-section__chevron {
+  transition: transform 0.2s ease;
+  color: var(--gold);
+}
+
+.accordion-section__chevron--open {
+  transform: rotate(180deg);
+}
+
+.accordion-section__body {
+  padding: 4px 16px 14px;
+  border-top: 1px solid var(--border);
+}
+
+/* ---------- Prayer block ---------- */
+.prayer-block {
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+.prayer-block:last-child {
+  border-bottom: none;
+}
+
+.prayer-block__eyebrow {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--gold);
+  margin: 0 0 4px;
+}
+
+.prayer-block__title {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: var(--maroon);
+}
+
+.prayer-block__title--mystery {
+  font-size: 19px;
+}
+
+.prayer-block__meditation {
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 14px;
+  margin: 0;
+}
+
+.prayer-block__text {
+  margin: 0 0 10px;
+  white-space: pre-line;
+}
+
+.prayer-block__versicle {
+  margin: 0 0 10px;
+  color: var(--ink-soft);
+}
+
+.prayer-block__versicle--standalone {
+  font-size: 15px;
+}
+
+.prayer-block__repeat {
+  font-size: 12.5px;
+  color: var(--gold);
+  font-weight: 600;
+  margin: 0;
+}
+
+.prayer-block--large .prayer-block__title {
+  font-size: 20px;
+}
+
+.prayer-block--large .prayer-block__text {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* ---------- Slideshow ---------- */
+.slideshow__stage {
+  min-height: 260px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slideshow__step-count {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gold);
+  margin: 0 0 10px;
+}
+
+.slideshow__done {
+  text-align: center;
+}
+
+.slideshow__done h3 {
+  color: var(--maroon);
+  font-size: 22px;
+  margin: 0 0 8px;
+}
+
+.slideshow__controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.btn {
+  flex: 1;
+  padding: 13px 18px;
+  border-radius: 12px;
+  border: 1px solid var(--maroon);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: var(--maroon);
+  color: #fff;
+}
+
+.btn--ghost {
+  background: none;
+  color: var(--maroon);
+}
+
+.btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* ---------- Other prayers / Angelus ---------- */
+.prayer-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.prayer-tabs__btn {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--paper);
+  color: var(--ink-soft);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.prayer-tabs__btn--active {
+  background: var(--maroon);
+  border-color: var(--maroon);
+  color: #fff;
+}
+
+.prayer-tabs__soon {
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin-left: auto;
+}
+
+.angelus {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.angelus__title {
+  color: var(--maroon);
+  margin: 0 0 6px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.angelus__intro {
+  text-align: center;
+  color: var(--ink-soft);
+  font-style: italic;
+  font-size: 13px;
+  margin: 0 0 16px;
+}
+
+.konkani-note {
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+@media (max-width: 420px) {
+  .app-header__title {
+    font-size: 21px;
+  }
+  .date-chip__weekday {
+    font-size: 10px;
+  }
+}
