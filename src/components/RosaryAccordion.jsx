@@ -25,7 +25,7 @@ function Section({ id, title, steps, language, open, onToggle }) {
 
 export default function RosaryAccordion({ steps, language }) {
   const { opening, decades, closing } = groupIntoDecades(steps);
-  const [openId, setOpenId] = useState('decade-0');
+  const [openId, setOpenId] = useState('opening'); // opening/decade-0
 
   const toggle = (id) => setOpenId((prev) => (prev === id ? null : id));
 

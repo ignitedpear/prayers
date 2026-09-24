@@ -12,7 +12,7 @@ const TODAY = startOfDay(new Date());
 
 export default function RosaryPage({ language }) {
   const [selectedDate, setSelectedDate] = useState(TODAY);
-  const [mode, setMode] = useState('list');
+  const [mode, setMode] = useState('list'); // slideshow
 
   const mysterySet = useMemo(() => mysteryForDate(selectedDate), [selectedDate]);
   const steps = useMemo(() => buildRosarySequence(mysterySet), [mysterySet]);
