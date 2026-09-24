@@ -103,7 +103,7 @@ export const PRAYERS = {
       la: 'O mi Iesu, dimitte nobis debita nostra, salva nos ab igne inferni, adduc in caelum omnes animas, praesertim illas, quae misericordiae tuae maxime indigent.',
       es: '¡Oh Jesús mío!, perdona nuestros pecados, líbranos del fuego del infierno, lleva todas las almas al cielo y socorre especialmente a las más necesitadas de tu misericordia.',
       pt: 'Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno; levai as almas todas para o Céu, principalmente as que mais precisarem.',
-      kok: 'O mhojea mogachea Jezu, bhogos amkam amchi patkam. nivar amkam emkhonddantlea ujeantlim. vor sorgar sogllea atmeank, bhov korun chodd goroz asloleank',
+      kok: 'O mhojea Jezu, bhogos amchim patkam, nivar amkam yemkhonddantlea ujeantlim; vhor sorgar sogllea atmeank, odik korun chodd goroz asloleank',
     },
   },
 
