@@ -20,7 +20,7 @@ export const UI = {
   of: { en: 'of', la: 'ex', es: 'de', pt: 'de', kok: 'chea' },
   repeatTimes: { en: 'Pray this', la: 'Recita', es: 'Reza esto', pt: 'Reze isto', kok: 'Hem Mhonn' },
   times: { en: 'times', la: 'vicibus', es: 'veces', pt: 'vezes', kok: 'pavtti' },
-  forFaithHopeCharity: { en: 'for the increase of Faith, Hope, and Charity', la: 'pro fide, spe et caritate augenda', es: 'por el aumento de la Fe, la Esperanza y la Caridad', pt: 'pelo aumento da Fé, Esperança e Caridade', kok: "" },
+  forFaithHopeCharity: { en: 'for the increase of Faith, Hope, and Charity', la: 'pro fide, spe et caritate augenda', es: 'por el aumento de la Fe, la Esperanza y la Caridad', pt: 'pelo aumento da Fé, Esperança e Caridade', kok: "amcho bhavarth, bhorvanso ani priti-mog vaddcheak" },
   languageLabel: { en: 'Language', la: 'Lingua', es: 'Idioma', pt: 'Idioma', kok: 'Bhas' },
   angelusIntro: {
     en: 'Traditionally prayed at 6 a.m., noon, and 6 p.m., in memory of the Incarnation.',

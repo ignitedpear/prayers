@@ -281,13 +281,14 @@ sup {
 }
 
 .prayer-block__title--mystery {
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .prayer-block__meditation {
+  font-weight: 550;
   font-style: italic;
   color: var(--ink-soft);
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
 }
 

@@ -30,6 +30,7 @@ export const MYSTERY_SETS = {
           es: 'La Encarnación del Hijo de Dios',
           pt: 'A Anunciação do Anjo à Virgem Maria',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: 'The angel Gabriel announces to Mary that she will conceive the Son of God, and she consents in humble obedience.',
@@ -46,6 +47,7 @@ export const MYSTERY_SETS = {
           es: 'La Visitación de Nuestra Señora a su Prima Santa Isabel',
           pt: 'A Visita de Maria a Santa Isabel',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: 'Mary visits her cousin Elizabeth, who greets her as "the mother of my Lord," and Mary sings the Magnificat.',
@@ -62,6 +64,7 @@ export const MYSTERY_SETS = {
           es: 'El Nacimiento del Hijo de Dios',
           pt: 'O Nascimento de Jesus em Belém',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: 'Jesus is born in Bethlehem in poverty and laid in a manger.',
@@ -78,6 +81,7 @@ export const MYSTERY_SETS = {
           es: 'La Presentación de Jesús en el Templo',
           pt: 'A Apresentação de Jesus no Templo',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: 'Mary and Joseph present the infant Jesus in the Temple in obedience to the Law, and Simeon prophesies over the child.',
@@ -94,6 +98,7 @@ export const MYSTERY_SETS = {
           es: 'El Niño Jesús Perdido y Hallado en el Templo',
           pt: 'A Perda e o Encontro de Jesus no Templo',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: 'After being lost for three days, the boy Jesus is found in the Temple, sitting among the teachers, listening and asking questions.',
@@ -130,6 +135,7 @@ export const MYSTERY_SETS = {
           es: 'La Oración de Jesús en el Huerto',
           pt: 'A Agonia de Jesus no Horto das Oliveiras',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: "Jesus prays in Gethsemane in great anguish, sweating blood, and accepts His Father's will before His Passion.",
@@ -146,6 +152,7 @@ export const MYSTERY_SETS = {
           es: 'La Flagelación del Señor',
           pt: 'A Flagelação de Jesus, Preso à Coluna',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: 'Jesus is bound to a pillar and brutally scourged by Roman soldiers.',
@@ -162,6 +169,7 @@ export const MYSTERY_SETS = {
           es: 'La Coronación de Espinas',
           pt: 'A Coroação de Espinhos',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: 'Soldiers mock Jesus as a false king, crowning Him with thorns and clothing Him in a purple robe.',
@@ -178,6 +186,7 @@ export const MYSTERY_SETS = {
           es: 'Jesús con la Cruz a Cuestas Camino del Calvario',
           pt: 'Jesus Carrega a Cruz a Caminho do Calvário',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: 'Jesus carries His cross to Calvary, falling under its weight, aided briefly by Simon of Cyrene.',
@@ -194,6 +203,7 @@ export const MYSTERY_SETS = {
           es: 'La Crucifixión y Muerte de Nuestro Señor',
           pt: 'Jesus é Crucificado e Morre na Cruz',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: 'Jesus is nailed to the cross and dies for the salvation of the world.',
@@ -230,6 +240,7 @@ export const MYSTERY_SETS = {
           es: 'La Resurrección del Hijo de Dios',
           pt: 'A Ressurreição de Jesus',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: 'Jesus rises from the dead on the third day, conquering sin and death.',
@@ -246,6 +257,7 @@ export const MYSTERY_SETS = {
           es: 'La Ascensión del Señor a los Cielos',
           pt: 'A Ascensão de Jesus ao Céu',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: 'Jesus ascends into Heaven in the presence of His disciples, promising to send the Holy Spirit.',
@@ -262,6 +274,7 @@ export const MYSTERY_SETS = {
           es: 'La Venida del Espíritu Santo sobre los Apóstoles',
           pt: 'A Descida do Espírito Santo',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: 'The Holy Spirit descends upon Mary and the apostles at Pentecost in tongues of fire, empowering them to preach the Gospel.',
@@ -278,6 +291,7 @@ export const MYSTERY_SETS = {
           es: 'La Asunción de Nuestra Señora a los Cielos',
           pt: 'A Assunção da Santíssima Virgem ao Céu',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: 'At the end of her earthly life, Mary is assumed body and soul into Heavenly glory.',
@@ -294,6 +308,7 @@ export const MYSTERY_SETS = {
           es: 'La Coronación de la Santísima Virgen como Reina de Cielos y Tierra',
           pt: 'A Coroação de Nossa Senhora, Rainha do Céu e da Terra',
           kok: '',
+          kokTemp: '',
         },
         meditation: {
           en: 'Mary is crowned Queen of Heaven and Earth by her Son.',
@@ -330,6 +345,7 @@ export const MYSTERY_SETS = {
           es: 'El Bautismo de Jesús en el Jordán',
           pt: 'O Batismo de Jesus no Jordão',
           kok: '',
+          kokTemp: 'Jordan nodint Jezuchem Snan',
         },
         meditation: {
           en: "John the Baptist baptizes Jesus in the Jordan River, and the Father's voice proclaims Him His beloved Son as the Spirit descends like a dove.",
@@ -346,6 +362,7 @@ export const MYSTERY_SETS = {
           es: 'La Autorrevelación de Jesús en las Bodas de Caná',
           pt: 'A Autorrevelação de Jesus nas Bodas de Caná',
           kok: '',
+          kokTemp: 'Kana Ganvant Logna vosreant Jezuchi ap-porgottnnim',
         },
         meditation: {
           en: "At Mary's request, Jesus performs His first public miracle, turning water into wine at a wedding feast.",
@@ -362,6 +379,7 @@ export const MYSTERY_SETS = {
           es: 'El Anuncio del Reino de Dios Invitando a la Conversión',
           pt: 'O Anúncio do Reino e o Convite à Conversão',
           kok: '',
+          kokTemp: 'Devachea Raj-achi Porgottnnim',
         },
         meditation: {
           en: "Jesus preaches the coming of God's Kingdom and calls all people to conversion and faith.",
@@ -378,6 +396,7 @@ export const MYSTERY_SETS = {
           es: 'La Transfiguración',
           pt: 'A Transfiguração de Jesus no Tabor',
           kok: '',
+          kokTemp: 'Jezuchem Rupantor',
         },
         meditation: {
           en: 'Jesus is transfigured in glory on the mountain before Peter, James, and John, revealing His divine splendor.',
@@ -394,6 +413,7 @@ export const MYSTERY_SETS = {
           es: 'La Institución de la Eucaristía',
           pt: 'A Instituição da Eucaristia',
           kok: '',
+          kokTemp: 'Misachea Bolidanachi Stapni',
         },
         meditation: {
           en: 'At the Last Supper, Jesus offers His Body and Blood under the appearances of bread and wine, instituting the Eucharist.',

@@ -86,7 +86,7 @@ export const PRAYERS = {
       la: 'Gloria Patri, et Filio, et Spiritui Sancto. Sicut erat in principio, et nunc, et semper, et in saecula saeculorum. Amen.',
       es: 'Gloria al Padre y al Hijo y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.',
       pt: 'Glória ao Pai e ao Filho e ao Espírito Santo. Como era no princípio, agora e sempre, e para todo o sempre. Amém.',
-      kok: 'Mhoima Bapak, ani Putak ani Povitr Atmeak: Adim, atam ani sodam sodankal. Amen.',
+      kok: 'Mhoima Bapak, ani Putak ani Povitr Atmeak \n\n Adim, atam ani sodam sodankal. Amen.',
     },
   },
 
@@ -103,7 +103,7 @@ export const PRAYERS = {
       la: 'O mi Iesu, dimitte nobis debita nostra, salva nos ab igne inferni, adduc in caelum omnes animas, praesertim illas, quae misericordiae tuae maxime indigent.',
       es: '¡Oh Jesús mío!, perdona nuestros pecados, líbranos del fuego del infierno, lleva todas las almas al cielo y socorre especialmente a las más necesitadas de tu misericordia.',
       pt: 'Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno; levai as almas todas para o Céu, principalmente as que mais precisarem.',
-      kok: 'O mhojea Jezu, amchi patkam amkam bhogos. emkhonddantlea ujeantlim amkam nivar. Somest atmeank pav, odhik korun chodd goroz asloleank',
+      kok: 'O mhojea mogachea Jezu, bhogos amkam amchi patkam. nivar amkam emkhonddantlea ujeantlim. vor sorgar sogllea atmeank, bhov korun chodd goroz asloleank',
     },
   },
 
@@ -134,7 +134,7 @@ export const PRAYERS = {
       la: 'Oremus. Deus, cuius Unigenitus per vitam, mortem et resurrectionem suam nobis salutis aeternae praemia comparavit: concede, quaesumus, ut haec mysteria sacratissimo beatae Mariae Virginis Rosario recolentes, et imitemur quod continent, et quod promittunt, assequamur. Per eundem Christum Dominum nostrum. Amen.',
       es: 'Oremos: Oh Dios, cuyo Unigénito Hijo, con su vida, muerte y resurrección, nos ha conseguido los bienes de la vida eterna, concédenos, te suplicamos, que meditando estos misterios en el Santísimo Rosario de la Bienaventurada Virgen María, imitemos lo que contienen y alcancemos lo que prometen. Por el mismo Cristo, Nuestro Señor. Amén.',
       pt: 'Oremos: Ó Deus, cujo Filho Unigênito, por sua vida, morte e ressurreição, nos mereceu as recompensas da salvação eterna, concedei, nós Vo-lo pedimos, que, meditando estes mistérios do Santíssimo Rosário da Bem-Aventurada Virgem Maria, imitemos o que eles contêm e consigamos o que prometem. Pelo mesmo Cristo, Nosso Senhor. Amém.',
-      kok: 'Prarthunya: Ie Deva, tuja ekleach putan aplie jinnie, morna ani jivantpana varvi sasnachie bachaveche inam amka joddn davarla; bhagevant Ankvar Mariechie bhov pavitr rosariche mister ami nihaltana tantu atapileacho ami patlav kariso ani tantu bhasaille ami jodishe kar mhonn ami tujelagim parattanv. Tyach Krista amcha Somia varvi. Amen.',
+      kok: 'Prarthum-ya: Deva, Tujea ekleach Putan Aplea jivita, mornna ani punorjivontponna vorvim amkam sasnachea sukhacho mukutt zoddlo. Bhagevonti Ankvar Mariyeche bhov Povitr Ruzaiche Mister ami niyalltanv, tantunt atthaplelem asa tachi dekh gheum-xi ani bhasailelem asa tem amkam melloxem kor mhonn magtanv. Teach amchea Somia Jezu Krista vorvim. Oxem zaum. \n Devacho adar asum sodankal amche tthaim. Oxem zaum',
     },
   },
 };
@@ -212,7 +212,7 @@ export const ANGELUS = {
       la: 'Ut digni efficiamur promissionibus Christi.',
       es: 'Para que seamos dignos de alcanzar las promesas de Jesucristo.',
       pt: 'Para que sejamos dignos das promessas de Cristo.',
-      kok: 'Jezu Kristan bhasailam tem amkam favo zauncheak.',
+      kok: 'Jezun bhasailam tem amkam favo zauncheak.',
     },
   },
   closingPrayer: {
