@@ -43,4 +43,15 @@ export const UI = {
     pt: 'Mais orações em breve.',
     kok: 'Anik magnnim ietat.',
   },
+  // Feedback widget — English only for now (falls back gracefully via pick());
+  // fill in `kok` here whenever you're ready, same as elsewhere.
+  feedbackButton: { en: 'Feedback' },
+  feedbackTitle: { en: 'Send Feedback' },
+  feedbackPrompt: { en: 'How can we improve this app? Found a typo or a bug?' },
+  feedbackPlaceholder: { en: 'Type your thoughts here...' },
+  feedbackEmailPlaceholder: { en: 'Your email (optional, if you’d like a reply)' },
+  feedbackSend: { en: 'Send' },
+  feedbackSending: { en: 'Sending…' },
+  feedbackThanks: { en: 'Thank you! Your feedback has been sent.' },
+  feedbackError: { en: 'Something went wrong. Please try again.' },
 };

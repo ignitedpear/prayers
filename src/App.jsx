@@ -3,6 +3,7 @@ import { LanguageProvider, useLanguage, pick } from './context/LanguageContext.j
 import LanguageSwitcher from './components/LanguageSwitcher.jsx';
 import RosaryPage from './components/RosaryPage.jsx';
 import AngelusPage from './components/AngelusPage.jsx';
+import FeedbackWidget from './components/FeedbackWidget.jsx';
 import { UI } from './data/ui.js';
 import './App.css';
 
@@ -38,6 +39,8 @@ function Shell() {
       <main className="app-main">
         {tab === 'rosary' ? <RosaryPage language={language} /> : <AngelusPage language={language} />}
       </main>
+
+      <FeedbackWidget language={language} />
     </div>
   );
 }

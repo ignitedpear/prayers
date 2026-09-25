@@ -26,6 +26,28 @@
 
     <!-- Paste your Google Search Console ownership-verification tag here, e.g.: -->
     <meta name="google-site-verification" content="eO_2vZBSlJVxq71IhtCA2GLCmO-Erh-CeURcu0qJS9Q" />
+
+    <!--
+      Microsoft Clarity (free UX analytics + heatmaps + session recordings).
+      1. Sign up free at https://clarity.microsoft.com
+      2. Create a project for https://ignitedpear.github.io/prayers/
+      3. Copy the Project ID it gives you and replace YOUR_CLARITY_PROJECT_ID below.
+      Until you do, this script is a harmless no-op (Clarity ignores an invalid ID).
+    -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', 'ynnbhvl5s6');
+    </script>
   </head>
   <body>
     <div id="root"></div>
