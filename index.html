@@ -29,10 +29,12 @@
 
     <!--
       Microsoft Clarity (free UX analytics + heatmaps + session recordings).
-      1. Sign up free at https://clarity.microsoft.com
-      2. Create a project for https://ignitedpear.github.io/prayers/
-      3. Copy the Project ID it gives you and replace YOUR_CLARITY_PROJECT_ID below.
-      Until you do, this script is a harmless no-op (Clarity ignores an invalid ID).
+      The 5th argument (the project ID) comes from VITE_CLARITY_ID, which
+      Vite fills in from .env.development or .env.production depending on
+      whether this was built with `npm run dev` or `npm run build` — so
+      local sessions use a deliberately invalid "REMOVE"-prefixed ID (a
+      harmless no-op) while the deployed site uses the real one. Edit those
+      two files, not this one, to change either project ID.
     -->
     <script type="text/javascript">
       (function (c, l, a, r, i, t, y) {
@@ -46,7 +48,7 @@
         t.src = 'https://www.clarity.ms/tag/' + i;
         y = l.getElementsByTagName(r)[0];
         y.parentNode.insertBefore(t, y);
-      })(window, document, 'clarity', 'script', 'ynnbhvl5s6');
+      })(window, document, 'clarity', 'script', '%VITE_CLARITY_ID%');
     </script>
   </head>
   <body>

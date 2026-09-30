@@ -14,7 +14,7 @@ export function buildRosarySequence(mysterySet) {
 
   mysterySet.mysteries.forEach((mystery, decadeIndex) => {
     const n = decadeIndex + 1;
-    steps.push({ id: `d${n}-announce`, section: 'decade', decadeIndex, kind: 'mysteryAnnounce', mystery });
+    steps.push({ id: `d${n}-announce`, section: 'decade', decadeIndex, kind: 'mysteryAnnounce', mystery, mysterySetKey: mysterySet.key });
     steps.push({ id: `d${n}-ourfather`, section: 'decade', decadeIndex, kind: 'ourFather' });
     steps.push({ id: `d${n}-hailmary`, section: 'decade', decadeIndex, kind: 'hailMary', repeat: 10 });
     steps.push({ id: `d${n}-glorybe`, section: 'decade', decadeIndex, kind: 'gloryBe' });
@@ -32,4 +32,25 @@ export function groupIntoDecades(steps) {
   const closing = steps.filter((s) => s.section === 'closing');
   const decades = [0, 1, 2, 3, 4].map((decadeIndex) => steps.filter((s) => s.section === 'decade' && s.decadeIndex === decadeIndex));
   return { opening, decades, closing };
+}
+
+// Given a step's index in the flat `steps` array, returns the accordion
+// section id that step belongs to ('opening' | 'decade-N' | 'closing').
+// Used to auto-expand the section matching whatever audio is playing.
+export function sectionIdForStepIndex(steps, index) {
+  const step = steps[index];
+  if (!step) return null;
+  if (step.section === 'decade') return `decade-${step.decadeIndex}`;
+  return step.section; // 'opening' | 'closing'
+}
+
+// The reverse: given a section id, the index of its first step — used so
+// clicking an accordion section while audio is playing jumps playback there.
+export function firstStepIndexForSectionId(steps, sectionId) {
+  if (sectionId === 'opening') return steps.findIndex((s) => s.section === 'opening');
+  if (sectionId === 'closing') return steps.findIndex((s) => s.section === 'closing');
+  const match = /^decade-(\d)$/.exec(sectionId || '');
+  if (!match) return -1;
+  const decadeIndex = Number(match[1]);
+  return steps.findIndex((s) => s.section === 'decade' && s.decadeIndex === decadeIndex);
 }

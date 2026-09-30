@@ -16,8 +16,8 @@ export const UI = {
   opening: { en: 'Opening Prayers', la: 'Preces Initiales', es: 'Oraciones Iniciales', pt: 'Orações Iniciais', kok: 'Survatechim Magnnim' },
   closing: { en: 'Closing Prayers', la: 'Preces Finales', es: 'Oraciones Finales', pt: 'Orações Finais', kok: "Xevottachim Magnnim" },
   decade: { en: '', la: 'Decas', es: 'Década', pt: 'Dezena', kok: '' },
-  step: { en: 'Step', la: 'Gradus', es: 'Paso', pt: 'Passo', kok: 'Pavlo' },
-  of: { en: 'of', la: 'ex', es: 'de', pt: 'de', kok: 'chea' },
+  step: { en: 'Step', la: 'Gradus', es: 'Paso', pt: 'Passo', kok: 'Step' },
+  of: { en: 'of', la: 'ex', es: 'de', pt: 'de', kok: 'of' },
   repeatTimes: { en: 'Pray this', la: 'Recita', es: 'Reza esto', pt: 'Reze isto', kok: 'Hem Mhonn' },
   times: { en: 'times', la: 'vicibus', es: 'veces', pt: 'vezes', kok: 'pavtti' },
   forFaithHopeCharity: { en: 'for the increase of Faith, Hope, and Charity', la: 'pro fide, spe et caritate augenda', es: 'por el aumento de la Fe, la Esperanza y la Caridad', pt: 'pelo aumento da Fé, Esperança e Caridade', kok: "amcho bhavarth, bhorvanso ani priti-mog vaddcheak" },
@@ -54,4 +54,10 @@ export const UI = {
   feedbackSending: { en: 'Sending…' },
   feedbackThanks: { en: 'Thank you! Your feedback has been sent.' },
   feedbackError: { en: 'Something went wrong. Please try again.' },
+
+  // Audio narration — English only for now (falls back gracefully via pick()).
+  audioSpeedLabel: { en: 'Speed' },
+  audioUnavailable: { en: 'Audio not available yet for this prayer.' },
+  audioPlayAria: { en: 'Play audio' },
+  audioPauseAria: { en: 'Pause audio' },
 };

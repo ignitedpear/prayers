@@ -4,6 +4,7 @@ import MysteryHeader from './MysteryHeader.jsx';
 import ViewModeToggle from './ViewModeToggle.jsx';
 import RosaryAccordion from './RosaryAccordion.jsx';
 import RosarySlideshow from './RosarySlideshow.jsx';
+import AudioSettingsBar from './AudioSettingsBar.jsx';
 import { mysteryForDate } from '../data/mysteries.js';
 import { buildRosarySequence } from '../utils/rosarySequence.js';
 import { startOfDay, isSameDay } from '../utils/dateUtils.js';
@@ -23,6 +24,7 @@ export default function RosaryPage({ language }) {
       <DateStrip selectedDate={selectedDate} today={TODAY} onSelect={setSelectedDate} language={language} />
       <MysteryHeader mysterySet={mysterySet} language={language} />
       <ViewModeToggle mode={mode} onChange={setMode} language={language} />
+      <AudioSettingsBar language={language} />
 
       {mode === 'list' ? (
         <RosaryAccordion key={resetKey} steps={steps} language={language} />

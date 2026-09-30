@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { LanguageProvider, useLanguage, pick } from './context/LanguageContext.jsx';
+import { AudioSettingsProvider } from './context/AudioSettingsContext.jsx';
 import LanguageSwitcher from './components/LanguageSwitcher.jsx';
 import RosaryPage from './components/RosaryPage.jsx';
 import AngelusPage from './components/AngelusPage.jsx';
@@ -48,7 +49,9 @@ function Shell() {
 export default function App() {
   return (
     <LanguageProvider>
-      <Shell />
+      <AudioSettingsProvider>
+        <Shell />
+      </AudioSettingsProvider>
     </LanguageProvider>
   );
 }
