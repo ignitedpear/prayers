@@ -18,7 +18,7 @@ export const PRAYERS = {
       la: 'In nomine Patris, et Filii, et Spiritus Sancti. Amen.',
       es: 'En el nombre del Padre, y del Hijo, y del Espíritu Santo. Amén.',
       pt: 'Em nome do Pai, e do Filho, e do Espírito Santo. Amém.',
-      kok: 'Povitr Khursache + kurven \n Nivar amkam, + amchea Deva \n Amchea + dusmanantlim \n Bapache ani Putache + ani Povitr Atmeache nanvim. Amen',
+      kok: 'Bapache, ani Putache ani Povitr Atmeache nanvim. Amen',
     },
   },
 
