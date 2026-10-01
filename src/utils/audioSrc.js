@@ -1,3 +1,7 @@
+import { PRAYERS } from '../data/prayers.js';
+import { UI } from '../data/ui.js';
+import { pick } from '../context/LanguageContext.jsx';
+
 // Maps a Rosary step to the audio file that narrates it, per language.
 // Naming convention (see public/audio/README.md for the full checklist):
 //   - Fixed prayers: /audio/{lang}/{kind}.mp3
@@ -28,4 +32,19 @@ export function listAudioFilesForLanguage(language) {
     }
   });
   return files;
+}
+
+// Short display title for a step, used by the shared Rosary player (and
+// anywhere else a quick "what's playing" label is useful). Reuses the same
+// data already shown in each prayer block, so it never drifts out of sync
+// with the prayer text itself.
+export function getStepTitle(step, language) {
+  if (!step) return '';
+  if (step.kind === 'mysteryAnnounce') {
+    const name = pick(step.mystery.name, language);
+    const decadeLabel = `${pick(UI.decade, language)} ${step.decadeIndex + 1}`.trim();
+    return name ? `${decadeLabel} · ${name}` : decadeLabel;
+  }
+  const prayer = PRAYERS[step.kind];
+  return prayer ? pick(prayer.title, language) : '';
 }

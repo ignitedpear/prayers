@@ -60,4 +60,8 @@ export const UI = {
   audioUnavailable: { en: 'Audio not available yet for this prayer.' },
   audioPlayAria: { en: 'Play audio' },
   audioPauseAria: { en: 'Pause audio' },
+  prayTheRosary: { en: 'Pray the Rosary' },
+  closePlayer: { en: 'Close player' },
+  previousPrayerAria: { en: 'Previous prayer' },
+  nextPrayerAria: { en: 'Next prayer' },
 };

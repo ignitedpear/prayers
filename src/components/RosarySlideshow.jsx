@@ -1,37 +1,52 @@
 import { useEffect, useState } from 'react';
 import PrayerBlock from './PrayerBlock.jsx';
 import ProgressBar from './ProgressBar.jsx';
-import AudioPlayButton from './AudioPlayButton.jsx';
-import { getAudioSrc } from '../utils/audioSrc.js';
-import { useBoundAudioPlayer } from '../hooks/useBoundAudioPlayer.js';
-import { useAudioSettings } from '../context/AudioSettingsContext.jsx';
 import { UI } from '../data/ui.js';
 import { pick } from '../context/LanguageContext.jsx';
 
-export default function RosarySlideshow({ steps, language, resetKey }) {
-  const [index, setIndex] = useState(0);
-  const { audioEnabled, playbackRate } = useAudioSettings();
+// `player` is the single shared Rosary player (see useRosaryPlayer),
+// lifted up to RosaryPage so this view and the Accordion stay in sync. While
+// it's open, this view's Next/Back buttons do exactly what the player's own
+// Previous/Next buttons do — they share one play head. When the player
+// isn't open (or the audio feature is off site-wide), this falls back to a
+// plain local slide index, exactly as before audio narration existed.
+export default function RosarySlideshow({ steps, language, resetKey, player, audioFeatureEnabled }) {
+  const [localIndex, setLocalIndex] = useState(0);
 
   useEffect(() => {
-    setIndex(0);
+    setLocalIndex(0);
   }, [resetKey]);
 
+  const usingPlayer = audioFeatureEnabled && player.isOpen;
   const total = steps.length;
-  const done = index >= total;
-  const step = !done ? steps[index] : null;
+  const index = usingPlayer ? player.currentIndex : localIndex;
+  const done = usingPlayer ? player.finished : index >= total;
+  const step = done ? null : steps[index];
 
-  const audioSrc = !done ? getAudioSrc(step, language) : null;
-  const audioRepeat = !done ? step.repeat || 1 : 1;
-  const { isPlaying, unavailable, repeatIndex, toggle } = useBoundAudioPlayer({
-    src: audioSrc,
-    repeat: audioRepeat,
-    enabled: audioEnabled,
-    rate: playbackRate,
-  });
+  const goNext = () => {
+    if (usingPlayer) {
+      player.next();
+      return;
+    }
+    setLocalIndex((i) => Math.min(i + 1, total));
+  };
+  const goBack = () => {
+    if (usingPlayer) {
+      player.prev();
+      return;
+    }
+    setLocalIndex((i) => Math.max(i - 1, 0));
+  };
+  const restart = () => {
+    if (usingPlayer) {
+      player.openAndPlay();
+      return;
+    }
+    setLocalIndex(0);
+  };
 
-  const goNext = () => setIndex((i) => Math.min(i + 1, total));
-  const goBack = () => setIndex((i) => Math.max(i - 1, 0));
-  const restart = () => setIndex(0);
+  const atStart = index === 0;
+  const atEnd = usingPlayer ? index >= total - 1 : index >= total;
 
   return (
     <div className="slideshow">
@@ -48,29 +63,13 @@ export default function RosarySlideshow({ steps, language, resetKey }) {
             <p className="slideshow__step-count">
               {pick(UI.step, language)} {index + 1} {pick(UI.of, language)} {total}
             </p>
-            {audioEnabled && (
-              <div className="slideshow__audio-bar">
-                <AudioPlayButton
-                  isPlaying={isPlaying}
-                  onToggle={toggle}
-                  disabled={unavailable}
-                  label={isPlaying ? pick(UI.audioPauseAria, language) : pick(UI.audioPlayAria, language)}
-                />
-                {!unavailable && audioRepeat > 1 && (
-                  <span className="slideshow__audio-counter">
-                    {repeatIndex} {pick(UI.of, language)} {audioRepeat}
-                  </span>
-                )}
-                {unavailable && <span className="slideshow__audio-note">{pick(UI.audioUnavailable, language)}</span>}
-              </div>
-            )}
             <PrayerBlock step={step} language={language} size="large" />
           </>
         )}
       </div>
 
       <div className="slideshow__controls">
-        <button type="button" className="btn btn--ghost" onClick={goBack} disabled={index === 0}>
+        <button type="button" className="btn btn--ghost" onClick={goBack} disabled={atStart}>
           {pick(UI.previous, language)}
         </button>
         {done ? (
@@ -78,7 +77,7 @@ export default function RosarySlideshow({ steps, language, resetKey }) {
             {pick(UI.restart, language)}
           </button>
         ) : (
-          <button type="button" className="btn btn--primary" onClick={goNext}>
+          <button type="button" className="btn btn--primary" onClick={goNext} disabled={atEnd}>
             {pick(UI.next, language)}
           </button>
         )}
