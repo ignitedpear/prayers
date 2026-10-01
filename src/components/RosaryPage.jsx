@@ -42,6 +42,15 @@ export default function RosaryPage({ language }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [resetKey]);
 
+  useEffect(() => {
+    // `audioEnabled` can change mid-session now (switching to a language
+    // the owner hasn't turned audio on for — see audioConfig.js), not just
+    // once at load. If it turns off while the player is open, close it so
+    // playback doesn't keep running behind a hidden UI.
+    if (!audioEnabled) player.reset();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [audioEnabled]);
+
   return (
     <div className="rosary-page">
       <DateStrip selectedDate={selectedDate} today={TODAY} onSelect={setSelectedDate} language={language} />

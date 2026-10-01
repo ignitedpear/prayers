@@ -1,5 +1,6 @@
 import { createContext, useContext, useMemo, useState } from 'react';
 import { AUDIO_CONFIG } from '../config/audioConfig.js';
+import { useLanguage } from './LanguageContext.jsx';
 
 const AudioSettingsContext = createContext(null);
 
@@ -25,10 +26,15 @@ function writeStored(key, value) {
 // Whether the whole audio narration feature is on, and whether visitors get
 // a speed selector, are website-owner decisions made in
 // src/config/audioConfig.js (committed to the repo) — never a toggle a
-// visitor can flip on the site itself.
+// visitor can flip on the site itself. `enabled` can also be overridden per
+// language there (e.g. audio ready in Konkani but not English yet); a
+// language left out of `languages` just uses the site-wide `enabled`.
 export function AudioSettingsProvider({ children }) {
-  const audioEnabled = AUDIO_CONFIG.enabled;
-  const allowSpeedControl = AUDIO_CONFIG.enabled && AUDIO_CONFIG.allowSpeedControl;
+  const { language } = useLanguage();
+
+  const languageOverride = AUDIO_CONFIG.languages?.[language];
+  const audioEnabled = languageOverride !== undefined ? languageOverride : AUDIO_CONFIG.enabled;
+  const allowSpeedControl = audioEnabled && AUDIO_CONFIG.allowSpeedControl;
 
   // Only meaningful (and only stored per-visitor) when the owner has allowed
   // speed control at all; otherwise playback is locked to the owner's

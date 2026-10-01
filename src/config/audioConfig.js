@@ -19,24 +19,40 @@ const LOCAL_CONFIG = {
   enabled: true,
   allowSpeedControl: true,
   fixedRate: 1,
+  // No per-language overrides locally — `enabled` above applies to every
+  // language while you're testing on your machine.
+  languages: null,
 };
 
 const PRODUCTION_CONFIG = {
   enabled: false,
   allowSpeedControl: false,
   fixedRate: 1,
+  // Per-language override of `enabled` above. Any language code not listed
+  // here just falls back to `enabled` — this is additive, not a
+  // replacement, so leaving a language out never changes its behavior.
+  // Example: audio narration is ready in Konkani but not yet in English, so
+  // it's turned on only for `kok` even though the site-wide switch is off.
+  languages: {
+    en: false,
+    kok: false,
+  },
 };
 
 // Master on/off switch for the whole audio narration feature. When false,
 // every play button, progress counter, and speed control is hidden and
 // playback is disabled entirely — e.g. while real recordings are still just
-// silent placeholders (see public/audio/README.md).
+// silent placeholders (see public/audio/README.md). `languages` (below) can
+// override this per language code; a language missing from `languages` (or
+// `languages` left as `null`) always just uses this value.
 //
 // Whether visitors are allowed to change the playback speed themselves:
 // - true: a speed selector (0.75x/1x/1.25x/1.5x) is shown; each visitor's
 //   choice is remembered in their own browser, starting from `fixedRate`.
 // - false: no speed selector is shown to anyone; playback is locked to
 //   `fixedRate` for every visitor.
+// This follows whatever `enabled` resolves to for the current language —
+// there's no separate per-language override for it.
 //
 // `fixedRate` is the speed used when `allowSpeedControl` is false (the only
 // speed available), and the default a visitor starts from when it's true.
