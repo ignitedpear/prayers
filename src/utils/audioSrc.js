@@ -4,11 +4,19 @@ import { pick } from '../context/LanguageContext.jsx';
 
 // Maps a Rosary step to the audio file that narrates it, per language.
 // Naming convention (see public/audio/README.md for the full checklist):
-//   - Fixed prayers: /audio/{lang}/{kind}.mp3
+//   - Fixed prayers: {base}/audio/{lang}/{kind}.mp3
 //       e.g. /audio/en/ourFather.mp3, /audio/kok/hailMary.mp3
-//   - Mystery announcements: /audio/{lang}/mystery-{setKey}-{decadeNumber}.mp3
+//   - Mystery announcements: {base}/audio/{lang}/mystery-{setKey}-{decadeNumber}.mp3
 //       e.g. /audio/en/mystery-joyful-1.mp3 (decadeNumber is 1-based)
-export const AUDIO_BASE = '/audio';
+//
+// `import.meta.env.BASE_URL` is Vite's own copy of the `base` option from
+// vite.config.js — '/' in dev, '/prayers/' in the GitHub Pages build.
+// A hardcoded '/audio' would resolve from the domain root (missing the
+// '/prayers/' prefix on the deployed site, since Vite only rewrites paths
+// it finds in index.html or in actual import statements — not arbitrary
+// strings built at runtime in JS like this one), so it has to be built
+// from BASE_URL instead.
+export const AUDIO_BASE = `${import.meta.env.BASE_URL}audio`;
 
 export function getAudioSrc(step, language) {
   if (!step || !language) return null;
