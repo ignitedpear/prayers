@@ -105,7 +105,7 @@ export const MYSTERY_SETS = {
           la: 'Post tres dies amissus, puer Iesus in Templo invenitur, inter doctores sedens, audiens et interrogans eos.',
           es: 'Después de estar perdido durante tres días, el niño Jesús es hallado en el Templo, sentado entre los doctores, escuchando y haciendo preguntas.',
           pt: 'Depois de ficar perdido por três dias, o menino Jesus é encontrado no Templo, sentado entre os doutores, ouvindo e fazendo perguntas.',
-          kok: "Porbechea disa sanddlea uprant, tin disamnim Ballok Jesu Dev-Templant mevlo",
+          kok: "Porbechea disa sanddlea uprant, tin disamnim Ballok Jezu Dev-Templant mevlo",
         },
       },
     ],
@@ -264,7 +264,7 @@ export const MYSTERY_SETS = {
           la: 'Iesus in caelum ascendit coram discipulis suis, promittens Spiritum Sanctum se missurum esse.',
           es: 'Jesús asciende al Cielo en presencia de sus discípulos, prometiendo enviar al Espíritu Santo.',
           pt: 'Jesus sobe ao Céu na presença de seus discípulos, prometendo enviar o Espírito Santo.',
-          kok: 'Somia Jezu Krist jibont zatoch challis disamnim porzollit sorgar choddlo.',
+          kok: 'Somia Jezu Krist jivont zatoch challis disamnim porzollit sorgar choddlo.',
         },
       },
       {
@@ -281,7 +281,7 @@ export const MYSTERY_SETS = {
           la: 'Spiritus Sanctus in Pentecoste super Mariam et apostolos in linguis igneis descendit, eos ad Evangelium praedicandum roborans.',
           es: 'El Espíritu Santo desciende sobre María y los apóstoles en Pentecostés en lenguas de fuego, dándoles fuerza para predicar el Evangelio.',
           pt: 'O Espírito Santo desce sobre Maria e os apóstolos em Pentecostes em línguas de fogo, dando-lhes força para pregar o Evangelho.',
-          kok: 'Somia Jezu Krist sorgar vetoch pattoilo Deva-Sprint Santa Cenekal mhonnlele svater zhoim Ankvar Maria and Apostle aslet.',
+          kok: 'Somia Jezu Krist sorgar vetoch pattoilo Deva-Spirit Santa Cenekal mhonnlele svater zhoim Ankvar Maria and Apostle aslet.',
         },
       },
       {
@@ -345,7 +345,7 @@ export const MYSTERY_SETS = {
           es: 'El Bautismo de Jesús en el Jordán',
           pt: 'O Batismo de Jesus no Jordão',
           kok: '',
-          kokTemp: 'Jordan nodint Jezuchem Snan',
+          kokTemp: '',
         },
         meditation: {
           en: "John the Baptist baptizes Jesus in the Jordan River, and the Father's voice proclaims Him His beloved Son as the Spirit descends like a dove.",
@@ -362,7 +362,7 @@ export const MYSTERY_SETS = {
           es: 'La Autorrevelación de Jesús en las Bodas de Caná',
           pt: 'A Autorrevelação de Jesus nas Bodas de Caná',
           kok: '',
-          kokTemp: 'Kana Ganvant Logna vosreant Jezuchi ap-porgottnnim',
+          kokTemp: '',
         },
         meditation: {
           en: "At Mary's request, Jesus performs His first public miracle, turning water into wine at a wedding feast.",
@@ -379,7 +379,7 @@ export const MYSTERY_SETS = {
           es: 'El Anuncio del Reino de Dios Invitando a la Conversión',
           pt: 'O Anúncio do Reino e o Convite à Conversão',
           kok: '',
-          kokTemp: 'Devachea Raj-achi Porgottnnim',
+          kokTemp: '',
         },
         meditation: {
           en: "Jesus preaches the coming of God's Kingdom and calls all people to conversion and faith.",
@@ -396,7 +396,7 @@ export const MYSTERY_SETS = {
           es: 'La Transfiguración',
           pt: 'A Transfiguração de Jesus no Tabor',
           kok: '',
-          kokTemp: 'Jezuchem Rupantor',
+          kokTemp: '',
         },
         meditation: {
           en: 'Jesus is transfigured in glory on the mountain before Peter, James, and John, revealing His divine splendor.',
@@ -413,7 +413,7 @@ export const MYSTERY_SETS = {
           es: 'La Institución de la Eucaristía',
           pt: 'A Instituição da Eucaristia',
           kok: '',
-          kokTemp: 'Misachea Bolidanachi Stapni',
+          kokTemp: '',
         },
         meditation: {
           en: 'At the Last Supper, Jesus offers His Body and Blood under the appearances of bread and wine, instituting the Eucharist.',

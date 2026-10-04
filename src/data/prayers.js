@@ -127,14 +127,14 @@ export const PRAYERS = {
       la: { v: 'Ora pro nobis, sancta Dei Genitrix.', r: 'Ut digni efficiamur promissionibus Christi.' },
       es: { v: 'Ruega por nosotros, Santa Madre de Dios.', r: 'Para que seamos dignos de alcanzar las promesas de Cristo.' },
       pt: { v: 'Rogai por nós, Santa Mãe de Deus.', r: 'Para que sejamos dignos das promessas de Cristo.' },
-      kok: { v: 'Bhagevont Devache Maie, amche khatir mag.', r: 'Jezu Kristan bhasailam tem amkam favo zauncheak.' },
+      kok: { v: 'Bhagevont Devache Maie, amche khatir mag.', r: 'Jezun bhasailam tem amkam favo zauncheak.' },
     },
     closingPrayer: {
       en: 'Let us pray. O God, whose only begotten Son, by His life, death, and resurrection, has purchased for us the rewards of eternal salvation; grant, we beseech Thee, that while meditating on these mysteries of the most holy Rosary of the Blessed Virgin Mary, we may both imitate what they contain and obtain what they promise, through Christ our Lord. Amen.',
       la: 'Oremus. Deus, cuius Unigenitus per vitam, mortem et resurrectionem suam nobis salutis aeternae praemia comparavit: concede, quaesumus, ut haec mysteria sacratissimo beatae Mariae Virginis Rosario recolentes, et imitemur quod continent, et quod promittunt, assequamur. Per eundem Christum Dominum nostrum. Amen.',
       es: 'Oremos: Oh Dios, cuyo Unigénito Hijo, con su vida, muerte y resurrección, nos ha conseguido los bienes de la vida eterna, concédenos, te suplicamos, que meditando estos misterios en el Santísimo Rosario de la Bienaventurada Virgen María, imitemos lo que contienen y alcancemos lo que prometen. Por el mismo Cristo, Nuestro Señor. Amén.',
       pt: 'Oremos: Ó Deus, cujo Filho Unigênito, por sua vida, morte e ressurreição, nos mereceu as recompensas da salvação eterna, concedei, nós Vo-lo pedimos, que, meditando estes mistérios do Santíssimo Rosário da Bem-Aventurada Virgem Maria, imitemos o que eles contêm e consigamos o que prometem. Pelo mesmo Cristo, Nosso Senhor. Amém.',
-      kok: 'Prarthum-ya: Deva, Tujea ekleach Putan Aplea jivita, mornna ani punorjivontponna vorvim amkam sasnachea sukhacho mukutt zoddlo. Bhagevonti Ankvar Mariyeche bhov Povitr Ruzaiche Mister ami niyalltanv, tantunt atthaplelem asa tachi dekh gheum-xi ani bhasailelem asa tem amkam melloxem kor mhonn magtanv. Teach amchea Somia Jezu Krista vorvim. Oxem zaum. \n Devacho adar asum sodankal amche tthaim. Oxem zaum',
+      kok: 'Magum-ia: Deva, Tujea ekleach Putan Aplea jivita, mornna ani punorjivontponna vorvim amkam sasnachea sukhacho mukutt zoddlo. Bhagevonti Ankvar Mariyeche bhov Povitr Ruzaiche Mister ami niyalltanv, tantunt atthaplelem asa tachi dekh gheum-xi ani bhasailelem asa tem amkam melloxem kor mhonn magtanv. Teach amchea Somia Jezu Krista vorvim. Oxem zaum. \n Devacho adar asum sodankal amche tthaim. Oxem zaum',
     },
   },
 };
