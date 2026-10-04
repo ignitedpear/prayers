@@ -35,7 +35,7 @@ const PRODUCTION_CONFIG = {
   // it's turned on only for `kok` even though the site-wide switch is off.
   languages: {
     en: false,
-    kok: false,
+    kok: true,
   },
 };
 

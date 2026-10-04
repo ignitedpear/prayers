@@ -247,7 +247,7 @@ export const MYSTERY_SETS = {
           la: 'Iesus tertia die a mortuis resurgit, peccatum et mortem vincens.',
           es: 'Jesús resucita de entre los muertos al tercer día, venciendo al pecado y a la muerte.',
           pt: 'Jesus ressuscita dos mortos ao terceiro dia, vencendo o pecado e a morte.',
-          kok: 'Somia Jezu Krist, Aplech podven tisrea disa meleleantlo jivont zelo.',
+          kok: 'Somia Jezu Krist, Aplech podven tisrea disa meleleantlo jivont zalo.',
         },
       },
       {

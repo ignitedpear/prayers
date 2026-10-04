@@ -188,7 +188,7 @@ Read each block below aloud and save it as an audio file with the exact filename
 
 ⚠️ No kok translation of this mystery's name exists yet in src/data/mysteries.js (only the meditation below is translated), so just read the meditation — don't read the English name "The Resurrection" aloud here.
 
-> Somia Jezu Krist, Aplech podven tisrea disa meleleantlo jivont zelo.
+> Somia Jezu Krist, Aplech podven tisrea disa meleleantlo jivont zalo.
 
 ---
 
