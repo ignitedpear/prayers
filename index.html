@@ -28,6 +28,35 @@
     <meta name="google-site-verification" content="eO_2vZBSlJVxq71IhtCA2GLCmO-Erh-CeURcu0qJS9Q" />
 
     <!--
+      Opt out of Microsoft Clarity entirely on this browser/device: visit
+      this site once with ?clarity_opt_out=1 in the URL (e.g.
+      https://ignitedpear.github.io/prayers/?clarity_opt_out=1) and it's
+      remembered here from then on, so Clarity never loads for you again on
+      that device — no further action needed. Visit with
+      ?clarity_opt_out=0 to turn tracking back on for that device.
+      This is separate from (and more reliable across phones/VPNs than)
+      Clarity's own Settings > IP blocking, which only works for a single,
+      static IPv4 address.
+    -->
+    <script type="text/javascript">
+      (function () {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          if (params.has('clarity_opt_out')) {
+            var optOut = params.get('clarity_opt_out') !== '0';
+            window.localStorage.setItem('prayers.clarityOptOut', optOut ? '1' : '0');
+            params.delete('clarity_opt_out');
+            var query = params.toString();
+            var cleanUrl = window.location.pathname + (query ? '?' + query : '') + window.location.hash;
+            window.history.replaceState({}, '', cleanUrl);
+          }
+        } catch (e) {
+          /* ignore storage/URL errors (private browsing, etc.) */
+        }
+      })();
+    </script>
+
+    <!--
       Microsoft Clarity (free UX analytics + heatmaps + session recordings).
       The 5th argument (the project ID) comes from VITE_CLARITY_ID, which
       Vite fills in from .env.development or .env.production depending on
@@ -37,18 +66,28 @@
       two files, not this one, to change either project ID.
     -->
     <script type="text/javascript">
-      (function (c, l, a, r, i, t, y) {
-        c[a] =
-          c[a] ||
-          function () {
-            (c[a].q = c[a].q || []).push(arguments);
-          };
-        t = l.createElement(r);
-        t.async = 1;
-        t.src = 'https://www.clarity.ms/tag/' + i;
-        y = l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t, y);
-      })(window, document, 'clarity', 'script', '%VITE_CLARITY_ID%');
+      (function () {
+        var optedOut = false;
+        try {
+          optedOut = window.localStorage.getItem('prayers.clarityOptOut') === '1';
+        } catch (e) {
+          /* ignore storage errors (private browsing, etc.) — default to tracking on */
+        }
+        if (optedOut) return;
+
+        (function (c, l, a, r, i, t, y) {
+          c[a] =
+            c[a] ||
+            function () {
+              (c[a].q = c[a].q || []).push(arguments);
+            };
+          t = l.createElement(r);
+          t.async = 1;
+          t.src = 'https://www.clarity.ms/tag/' + i;
+          y = l.getElementsByTagName(r)[0];
+          y.parentNode.insertBefore(t, y);
+        })(window, document, 'clarity', 'script', '%VITE_CLARITY_ID%');
+      })();
     </script>
   </head>
   <body>
