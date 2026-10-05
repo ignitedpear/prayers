@@ -10,6 +10,13 @@
   --border: #e6dcc8;
   --shadow: 0 6px 20px rgba(74, 17, 32, 0.08);
 
+  /* The thin rule drawn wherever a prayer's text has a line break ("\n") —
+     see .prayer-line/.prayer-split-line in App.css. Change any of these
+     three any time; nothing else needs updating. */
+  --prayer-divider-color: var(--gold);
+  --prayer-divider-opacity: 0.35;
+  --prayer-divider-thickness: 1px;
+
   font: 16px/1.55 'Georgia', 'Iowan Old Style', 'Palatino Linotype', serif;
   color: var(--ink);
   background: var(--cream);

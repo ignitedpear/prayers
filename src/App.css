@@ -315,6 +315,21 @@ sup {
   gap: 12px;
 }
 
+/* A thin rule marking every line break ("\n") — only between lines (the
+   adjacent-sibling selector skips the very first line, so nothing is drawn
+   above the start or below the end of the text). Color, opacity and
+   thickness are all CSS variables (see :root in index.css) so they can be
+   changed in one place later. */
+.prayer-line + .prayer-line,
+.prayer-line + .prayer-split-line,
+.prayer-split-line + .prayer-line,
+.prayer-split-line + .prayer-split-line {
+  border-top: var(--prayer-divider-thickness) solid
+    color-mix(in srgb, var(--prayer-divider-color) calc(var(--prayer-divider-opacity) * 100%), transparent);
+  margin-top: 6px;
+  padding-top: 6px;
+}
+
 .prayer-block__versicle {
   margin: 0 0 10px;
   color: var(--ink-soft);

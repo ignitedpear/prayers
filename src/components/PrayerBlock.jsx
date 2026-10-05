@@ -29,9 +29,9 @@ export default function PrayerBlock({ step, language, size = 'large' }) {
           </p>
         )}
         <h3 className="prayer-block__title prayer-block__title--mystery">{withOrdinalSuperscripts(name)}</h3>
-        <p className={`prayer-block__meditation${hasName ? '' : ' prayer-block__meditation--emphasis'}`}>
+        <div className={`prayer-block__meditation${hasName ? '' : ' prayer-block__meditation--emphasis'}`}>
           {renderPrayerText(pick(step.mystery.meditation, language))}
-        </p>
+        </div>
       </div>
     );
   }
@@ -42,13 +42,13 @@ export default function PrayerBlock({ step, language, size = 'large' }) {
     return (
       <div className={cls}>
         <h3 className="prayer-block__title">{pick(p.title, language)}</h3>
-        <p className="prayer-block__text">{renderPrayerText(pick(p.text, language))}</p>
-        <p className="prayer-block__versicle">
+        <div className="prayer-block__text">{renderPrayerText(pick(p.text, language))}</div>
+        <div className="prayer-block__versicle">
           <strong>V.</strong> {renderPrayerText(versicle.v)}
           <br />
           <strong>R.</strong> {renderPrayerText(versicle.r)}
-        </p>
-        <p className="prayer-block__text">{renderPrayerText(pick(p.closingPrayer, language))}</p>
+        </div>
+        <div className="prayer-block__text">{renderPrayerText(pick(p.closingPrayer, language))}</div>
       </div>
     );
   }
@@ -57,11 +57,11 @@ export default function PrayerBlock({ step, language, size = 'large' }) {
     const item = ANGELUS.versicles[step.versicleIndex];
     return (
       <div className={cls}>
-        <p className="prayer-block__versicle prayer-block__versicle--standalone">
+        <div className="prayer-block__versicle prayer-block__versicle--standalone">
           <strong>V.</strong> {renderPrayerText(pick(item.v, language))}
           <br />
           <strong>R.</strong> {renderPrayerText(pick(item.r, language))}
-        </p>
+        </div>
       </div>
     );
   }
@@ -69,12 +69,12 @@ export default function PrayerBlock({ step, language, size = 'large' }) {
   if (step.kind === 'angelusClosing') {
     return (
       <div className={cls}>
-        <p className="prayer-block__versicle prayer-block__versicle--standalone">
+        <div className="prayer-block__versicle prayer-block__versicle--standalone">
           <strong>V.</strong> {renderPrayerText(pick(ANGELUS.closingVersicle.v, language))}
           <br />
           <strong>R.</strong> {renderPrayerText(pick(ANGELUS.closingVersicle.r, language))}
-        </p>
-        <p className="prayer-block__text">{renderPrayerText(pick(ANGELUS.closingPrayer, language))}</p>
+        </div>
+        <div className="prayer-block__text">{renderPrayerText(pick(ANGELUS.closingPrayer, language))}</div>
       </div>
     );
   }
@@ -85,7 +85,7 @@ export default function PrayerBlock({ step, language, size = 'large' }) {
   return (
     <div className={cls}>
       <h3 className="prayer-block__title">{pick(prayer.title, language)}</h3>
-      <p className="prayer-block__text">{renderPrayerText(pick(prayer.text, language))}</p>
+      <div className="prayer-block__text">{renderPrayerText(pick(prayer.text, language))}</div>
       <RepeatNote step={step} language={language} />
     </div>
   );
