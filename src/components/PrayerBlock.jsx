@@ -2,6 +2,7 @@ import { PRAYERS, ANGELUS } from '../data/prayers.js';
 import { UI } from '../data/ui.js';
 import { pick } from '../context/LanguageContext.jsx';
 import { withOrdinalSuperscripts } from '../utils/ordinalSuperscript.jsx';
+import { renderPrayerText } from '../utils/richPrayerText.jsx';
 
 function RepeatNote({ step, language }) {
   if (!step.repeat) return null;
@@ -29,7 +30,7 @@ export default function PrayerBlock({ step, language, size = 'large' }) {
         )}
         <h3 className="prayer-block__title prayer-block__title--mystery">{withOrdinalSuperscripts(name)}</h3>
         <p className={`prayer-block__meditation${hasName ? '' : ' prayer-block__meditation--emphasis'}`}>
-          {pick(step.mystery.meditation, language)}
+          {renderPrayerText(pick(step.mystery.meditation, language))}
         </p>
       </div>
     );
@@ -41,13 +42,13 @@ export default function PrayerBlock({ step, language, size = 'large' }) {
     return (
       <div className={cls}>
         <h3 className="prayer-block__title">{pick(p.title, language)}</h3>
-        <p className="prayer-block__text">{pick(p.text, language)}</p>
+        <p className="prayer-block__text">{renderPrayerText(pick(p.text, language))}</p>
         <p className="prayer-block__versicle">
-          <strong>V.</strong> {versicle.v}
+          <strong>V.</strong> {renderPrayerText(versicle.v)}
           <br />
-          <strong>R.</strong> {versicle.r}
+          <strong>R.</strong> {renderPrayerText(versicle.r)}
         </p>
-        <p className="prayer-block__text">{pick(p.closingPrayer, language)}</p>
+        <p className="prayer-block__text">{renderPrayerText(pick(p.closingPrayer, language))}</p>
       </div>
     );
   }
@@ -57,9 +58,9 @@ export default function PrayerBlock({ step, language, size = 'large' }) {
     return (
       <div className={cls}>
         <p className="prayer-block__versicle prayer-block__versicle--standalone">
-          <strong>V.</strong> {pick(item.v, language)}
+          <strong>V.</strong> {renderPrayerText(pick(item.v, language))}
           <br />
-          <strong>R.</strong> {pick(item.r, language)}
+          <strong>R.</strong> {renderPrayerText(pick(item.r, language))}
         </p>
       </div>
     );
@@ -69,11 +70,11 @@ export default function PrayerBlock({ step, language, size = 'large' }) {
     return (
       <div className={cls}>
         <p className="prayer-block__versicle prayer-block__versicle--standalone">
-          <strong>V.</strong> {pick(ANGELUS.closingVersicle.v, language)}
+          <strong>V.</strong> {renderPrayerText(pick(ANGELUS.closingVersicle.v, language))}
           <br />
-          <strong>R.</strong> {pick(ANGELUS.closingVersicle.r, language)}
+          <strong>R.</strong> {renderPrayerText(pick(ANGELUS.closingVersicle.r, language))}
         </p>
-        <p className="prayer-block__text">{pick(ANGELUS.closingPrayer, language)}</p>
+        <p className="prayer-block__text">{renderPrayerText(pick(ANGELUS.closingPrayer, language))}</p>
       </div>
     );
   }
@@ -84,7 +85,7 @@ export default function PrayerBlock({ step, language, size = 'large' }) {
   return (
     <div className={cls}>
       <h3 className="prayer-block__title">{pick(prayer.title, language)}</h3>
-      <p className="prayer-block__text">{pick(prayer.text, language)}</p>
+      <p className="prayer-block__text">{renderPrayerText(pick(prayer.text, language))}</p>
       <RepeatNote step={step} language={language} />
     </div>
   );

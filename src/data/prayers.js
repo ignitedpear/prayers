@@ -137,6 +137,63 @@ export const PRAYERS = {
       kok: 'Magum-ia: Deva, Tujea ekleach Putan Aplea jivita, mornna ani punorjivontponna vorvim amkam sasnachea sukhacho mukutt zoddlo. Bhagevonti Ankvar Mariyeche bhov Povitr Ruzaiche Mister ami niyalltanv, tantunt atthaplelem asa tachi dekh gheum-xi ani bhasailelem asa tem amkam melloxem kor mhonn magtanv. Teach amchea Somia Jezu Krista vorvim. Oxem zaum. \n Devacho adar asum sodankal amche tthaim. Oxem zaum',
     },
   },
+
+  // Three more "Other Prayers" tab entries, in Konkani — titles only for
+  // now, and only in Konkani. `en` (and `la`/`es`/`pt`) are left blank on
+  // purpose: these prayers don't have an English name yet, and the UI hides
+  // a prayer's tab entirely in any language where its title is blank (see
+  // AngelusPage.jsx) rather than showing an empty button. Text is left
+  // blank in every language to be filled in later.
+  hanvPatki: {
+    title: {
+      en: '',
+      la: '',
+      es: '',
+      pt: '',
+      kok: 'Hanv Patki',
+    },
+    text: {
+      en: '',
+      la: '',
+      es: '',
+      pt: '',
+      kok: 'Hanv patki, Sorpodvedar Devak ani tumkam, bhavam-bhoinnimno, mhozo guneanv ucharun sangtam; monan chintun ani tonddan ucharun, vaitt adharun ani borem soddun, hanven zaitim patkam keleant (horddear marun mhonnta) Ho mhozo oprad, ho mhozo oprad, ho mhozo bhov vhodd oprad. Hea pasot bhagevont sodanch Ankvar Mariek, sogllea devdutank and bhoktank, ani tumkam, bhavam-bhoinnimno, mhoje khatir, amchea Sorvespora Deva lagim, vinoti korat mhonn prarthun magtam',
+    },
+  },
+
+  dukhichiUcharnni: {
+    title: {
+      en: '',
+      la: '',
+      es: '',
+      pt: '',
+      kok: 'Dukhichi Ucharnni',
+    },
+    text: {
+      en: '',
+      la: '',
+      es: '',
+      pt: '',
+      kok: 'Deva, mhojea Bapa, Tum chodd boro ani mogall astana Tujer ani mhojea bhavam-bhoinnincher hanvem chuk keli. Dekhun mhaka vhodd khont bhogta, ani khaltea kallzan mhaka bhogos mhunn magtam. Tujeach adharacher patieun novean patok korinam zauncheak vavrunk hanv bhas ditam.',
+    },
+  },
+
+  saibinichiLadain: {
+    title: {
+      en: '',
+      la: '',
+      es: '',
+      pt: '',
+      kok: 'Saibinichi Ladain',
+    },
+    text: {
+      en: '',
+      la: '',
+      es: '',
+      pt: '',
+      kok: 'Sorvespora Deva \t amchi kaklut kor \n Krista Somia \n Sorvespora Deva \n Krista Somia \t amkam aik \n Krista Somia \t doyen amkam aik \n Deva Sorginchea Bapa \t amchi kaklut kor \n Deva Putra, sonvsarachea Soddvonndara \n Deva Povitr Atmea \n Povitr Tritve, ekleach Deva \n Bhagevonti Marie \t amche pasun mag \n Bhagevonti Devache Maie \n Bhagevonti Ankvariche Ankvari \n Kristache Maie \n Povitr Sobheche Maie \n Kaklutiche Maie \n Dev Kurpeche Maie \n Bhorvanxeache Maie \n Bhou nitoll Maie \n Bhou nirmoll Maie \n Bhoxttounaslole Maie \n Khot lagonk naslole Maie \n Mogall Maie \n Ojapanche Maie \n Bore budhiche Maie \n Rochnnarache Maie \n Soddvonndarache Maie \n Bhou xanne Ankvari \n Man favo aslole Ankvari \n Onod favo aslole Ankvari \n Podvedar Ankvari \n Kaklutsar Ankvari \n Visvaxi Ankvari \n Nittayechea Arxea \n Zannvayechea Thikanna \n Amchea sontosachea prestava \n Dev Kurpechea Aidona \n Manachea Aidona \n Ut`tom Devosavanchea Aidona \n Ghuttachea Roza \n Davidache Tori \n Marfinche Tori \n Bhangarachea Ghora \n Ekvottachea Arka \n Sorginchea Darvonttea \n Fanteavelea Nokhetra \n Piddevontache bholaike \n Patkeanchea Asrea \n Pordexeanchea Somadhana \n Kristanvachea Alaxirea \n Dukhestanche Buzvondare \n Bhoddveanchea Rannie \n Patriarkanche Rannie \n Profetanche Rannie \n Apostlanche Rannie \n Martirinche Rannie \n Konfesoranche Rannie \n Ankvarinche Rannie \n Soglleam Bhoktanche Rannie \n Soimbhachea khotavinne gorb sombhoulole Rannie \n Kuddi-Otmea soit sorgar vhelele Rannie \n Bhou Povitr Ruzaiche Rannie \n Sovostayeche Rannie \n Devache Xellie sonvsarachim patkam kaddtole \t amkam bhogos Saiba \n Devache Xellie sonvsarachim patkam kaddtole \t doyen amkam aik Saiba \n Devache Xellie sonvsarachim patkam kaddtole \t amchi kaklut kor',
+    },
+  },
 };
 
 // The Angelus versicles (each followed by a Hail Mary) plus the closing

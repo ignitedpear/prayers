@@ -303,7 +303,16 @@ sup {
 
 .prayer-block__text {
   margin: 0 0 10px;
-  white-space: pre-line;
+}
+
+/* Line breaks ("\n") and left/right split lines ("\t") inside prayer text
+   are now built as explicit elements in JS (see richPrayerText.jsx) rather
+   than relying on `white-space: pre-line`, so a literal tab character can
+   be given its own meaning instead of being collapsed like a space. */
+.prayer-split-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .prayer-block__versicle {
@@ -605,6 +614,13 @@ sup {
   color: var(--ink-soft);
   border-top: 1px solid var(--border);
   padding-top: 12px;
+}
+
+.other-prayers-page__simple {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
 }
 
 @media (max-width: 420px) {
