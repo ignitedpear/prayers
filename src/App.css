@@ -259,7 +259,7 @@ sup {
 /* ---------- Prayer block ---------- */
 .prayer-block {
   padding: 14px 0;
-  border-bottom: 1px dashed var(--border);
+  border-bottom: var(--prayer-block-divider-thickness) solid var(--border);
 }
 
 .prayer-block:last-child {
@@ -324,8 +324,8 @@ sup {
 .prayer-line + .prayer-split-line,
 .prayer-split-line + .prayer-line,
 .prayer-split-line + .prayer-split-line {
-  border-top: var(--prayer-divider-thickness) solid
-    color-mix(in srgb, var(--prayer-divider-color) calc(var(--prayer-divider-opacity) * 100%), transparent);
+  border-top: var(--prayer-line-divider-thickness) dashed
+    color-mix(in srgb, var(--prayer-line-divider-color) calc(var(--prayer-line-divider-opacity) * 100%), transparent);
   margin-top: 6px;
   padding-top: 6px;
 }
