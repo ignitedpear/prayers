@@ -56,7 +56,14 @@ export function useRosaryPlayer({ items, rate }) {
         // Same clip, one more time — replay in place rather than reload.
         setRepeatIndex((r) => r + 1);
         audio.currentTime = 0;
-        audio.play().catch(() => setUnavailable(true));
+        // A rejected play() here (most commonly the phone's screen locking,
+        // or the browser backgrounding the tab and suspending audio) is NOT
+        // a missing-file error — the clip is fine, playback just got
+        // interrupted and the browser won't resume it without a fresh tap.
+        // Flip back to "paused" (isPlaying -> false) rather than marking the
+        // step `unavailable`, which would both show the wrong message and
+        // permanently disable the Play button.
+        audio.play().catch(() => setIsPlaying(false));
         return;
       }
 
@@ -108,7 +115,11 @@ export function useRosaryPlayer({ items, rate }) {
     audio.playbackRate = rate;
 
     if (isPlaying) {
-      audio.play().catch(() => setUnavailable(true));
+      // Same reasoning as the repeat-loop branch above: a rejected play()
+      // here is usually the OS/browser suspending audio (lock screen,
+      // backgrounded tab), not a broken file — fall back to "paused", not
+      // "unavailable".
+      audio.play().catch(() => setIsPlaying(false));
     } else {
       audio.pause();
     }
@@ -117,6 +128,23 @@ export function useRosaryPlayer({ items, rate }) {
   useEffect(() => {
     if (audioRef.current) audioRef.current.playbackRate = rate;
   }, [rate]);
+
+  // Best-effort auto-resume: if the tab was backgrounded mid-playback and the
+  // browser paused the element outright (common right after a phone unlocks
+  // again), try to pick it back up as soon as the page is visible once more.
+  // This can still be rejected on stricter mobile browsers that require a
+  // real tap — in which case it quietly falls back to the same "paused,
+  // tap play to resume" state as above, so there's no downside to trying.
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      const audio = audioRef.current;
+      if (document.visibilityState === 'visible' && isPlaying && audio && audio.paused) {
+        audio.play().catch(() => setIsPlaying(false));
+      }
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
+  }, [isPlaying]);
 
   const play = useCallback(() => setIsPlaying(true), []);
   const pause = useCallback(() => setIsPlaying(false), []);

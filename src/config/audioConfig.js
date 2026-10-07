@@ -26,7 +26,7 @@ const LOCAL_CONFIG = {
 
 const PRODUCTION_CONFIG = {
   enabled: false,
-  allowSpeedControl: false,
+  allowSpeedControl: true,
   fixedRate: 1,
   // Per-language override of `enabled` above. Any language code not listed
   // here just falls back to `enabled` — this is additive, not a
