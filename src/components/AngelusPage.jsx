@@ -8,7 +8,7 @@ const OTHER_PRAYERS = [
   { id: 'angelus', name: ANGELUS.title },
   { id: 'hanvPatki', name: PRAYERS.hanvPatki.title },
   { id: 'dukhichiUcharnni', name: PRAYERS.dukhichiUcharnni.title },
-  { id: 'saibinichiLadain', name: PRAYERS.saibinichiLadain.title },
+  { id: 'litanyOfTheBlessedVirginMary', name: PRAYERS.litanyOfTheBlessedVirginMary.title },
 ];
 
 const hasTitle = (name, language) => pick(name, language).trim().length > 0;
@@ -78,7 +78,7 @@ export default function AngelusPage({ language }) {
       )}
       {effectiveActiveId === 'hanvPatki' && <SimplePrayerTab kind="hanvPatki" language={language} />}
       {effectiveActiveId === 'dukhichiUcharnni' && <SimplePrayerTab kind="dukhichiUcharnni" language={language} />}
-      {effectiveActiveId === 'saibinichiLadain' && <SimplePrayerTab kind="saibinichiLadain" language={language} />}
+      {effectiveActiveId === 'litanyOfTheBlessedVirginMary' && <SimplePrayerTab kind="litanyOfTheBlessedVirginMary" language={language} />}
     </div>
   );
 }
